@@ -1,0 +1,27 @@
+/* ELEMENT Selector */
+div{
+    background-color: aquamarine;
+}
+
+p{
+    background-color: red;
+}
+
+
+/* ID Selector */
+#header{
+    font-size: 2rem;
+}
+
+
+
+/* Klassen Selector */
+.subtitle{
+    color: red;
+}
+
+
+
+/*
+https://www.w3schools.com/cssref/css_selectors.asp
+*/
