@@ -1,3 +1,8 @@
+* {
+    margin: 0px;
+    font-size: 20px;
+}
+
 div{
     height: 50px;
     background-color: red;
@@ -7,14 +12,17 @@ div{
     background-color: green;
     height: 200px;
     width: 200px;
+    font-size: 2rem;
 }
 
 
 .container1{
     width: 50%;
+    font-size: 0.8rem; /*root       wert mal aktuelle Schriftgröße*/
 }
 
 .container2{
     width: 50vw;
     height: 50vh;
+    font-size: 0.8em;
 }
