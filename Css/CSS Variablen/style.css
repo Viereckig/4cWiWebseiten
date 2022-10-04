@@ -1,0 +1,25 @@
+*{
+    font-size: 18px;
+    --fontsize-big:1.5rem;
+    --fontsize-medium:1.3rem;
+    --fontsize-normal:0.8rem;
+    --main-color: green;
+}
+
+.header{
+    font-size: var(--fontsize-big);
+    font-weight: 800;
+}
+
+.subheader{
+    font-size: var(--fontsize-medium);
+}
+
+.main{
+    font-size: var(--fontsize-normal);
+    background-color: var(--main-color);
+}
+
+.sidebar{
+    font-size: var(--fontsize-normal);
+}
