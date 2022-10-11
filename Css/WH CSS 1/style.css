@@ -1,0 +1,57 @@
+
+
+
+
+.textbox{
+    margin: 40px;
+    padding: 20px;
+
+    width: 200px;
+    height: 400px;
+    background-color: blue;
+    position: relative;
+}
+
+.brownbox{
+    background-color: green;
+    width: 40px;
+    height: 40px;
+    
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.vbox{
+    background-color: black;
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    left: -20px;
+    top: -20px;
+}
+
+
+body{
+    margin: 0;
+}
+
+
+.boxcontainer{
+    margin: 0px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 40px;
+}
+
+.flexbox{
+    background-color: green;
+    width: 40px;
+    height: 20px;
+}
+
