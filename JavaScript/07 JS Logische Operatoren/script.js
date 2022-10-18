@@ -13,6 +13,11 @@
 
 var zahl1 = Math.floor(Math.random() * 100);
 var zahl2 = Math.floor(Math.random() * 100);
-console.log(zahl1);
 
-
+if (zahl1 < zahl2 && zahl1 < 50) {
+    console.log("Zahl 1 ist kleiner als Zahl 2 und Mini");
+} else if (zahl1 < 30 || zahl2 < 30) {
+    console.log("Eine der beiden ist kleiner als 30");
+} else if (zahl1 < 50 && zahl2 != 50) {
+    console.log("Erste Zahl klein, zweite kein 50iger");
+}
