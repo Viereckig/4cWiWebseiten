@@ -22,9 +22,10 @@ Die Ausgabe soll wie folgt aussehen:
 
 
 
-var month = 3;
-var startDay = 3;
-var days = null;
+var month = 8;
+var startDay = 1;
+var days = 0;
+var daycounter = 1;
 
 switch (month) {
     case 1:
@@ -49,21 +50,29 @@ switch (month) {
 
 console.log("| Mo | Di | Mi | Do | Fr | Sa | So |");
 process.stdout.write("| ");
-for(let i = 1; i <= days + startDay / 7; i++){
-    if(i >= startDay){
-        if(i-startDay+1 < 10){
-            process.stdout.write(i-startDay+1 + "  | ");
-        } else{
-            process.stdout.write(i-startDay+1 + " | ");
+
+
+for(let i = 0; i < Math.ceil((days + startDay-1)/7); i++){
+
+    for(let j = 0; j < 7; j++){
+        if(startDay-1 > 0){
+            process.stdout.write("   | ");
+            startDay--;
+        }else{
+            if(days+1 > daycounter){
+                if(daycounter < 10){
+                    process.stdout.write(" " + daycounter + " | ");
+                }else{
+                    process.stdout.write(daycounter + " | ");
+                }
+                daycounter++;
+            }else{
+                process.stdout.write("   | ");
+            }
         }
-        
-    } else{
-        process.stdout.write("   | ");
     }
-    if(i%7 == 0){
-        if(i != days){
-            console.log("");
-            process.stdout.write("| ");
-        }
+    console.log("");
+    if(days+1 > daycounter){
+        process.stdout.write("| ");
     }
 }
