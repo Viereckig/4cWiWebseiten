@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src=".\script.js" defer></script>
     <title>ToDo-List</title>
 </head>
 <body>
-    <style>
-        body{
-            text-align: center;
-        }
 
-    </style>
+    <div class="wrapper">
+        <div id="header">
+            <h1>ToDos</h1>
+        </div>     
+        <div id="content">
+            <ul id="taskList">
+                
+            </ul>
+        </div>
+        <div id="control">
+            <input type="text" id="txtNewToDo" placeholder="Aufgabe">
+            <input type="text" id="txtResponsible" placeholder="Verantwortlicher">
+            <button id="addTask">Add Task</button> 
+        </div>
+    </div>
 
-    <h1>ToDo-List</h1>
-
-
+    
 
 
 
