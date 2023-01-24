@@ -1,0 +1,25 @@
+#leagues{
+    text-align: center;
+}
+
+#container{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.item{
+    border: 2px solid black;
+    display: grid;
+    place-items: center;
+    width: 250px;
+    height: 150px;
+    margin: 50px;
+}
+
